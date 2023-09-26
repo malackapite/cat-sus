@@ -1,0 +1,10 @@
+.nagykep img{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(200000000deg);}
+}
