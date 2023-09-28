@@ -14,7 +14,6 @@ class Model{
         this.#id=this.#id+1>=this.#keplista.length
         ?0
         :this.#id+1
-        console.log(this.#id+1);
     }
 
     bal(){
