@@ -1,10 +1,41 @@
+h1{
+    text-align: center;
+}
+
 .nagykep img{
-    animation-name: example;
+    width: 100%;
+    max-width: 1000px;
+
+    animation-name: cat-sus;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
-@keyframes example {
+.nagykep{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.nagykep input{
+    min-width: 50px;
+    cursor: pointer;
+}
+
+.kiskep{
+    margin:auto;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    cursor: pointer;
+}
+
+.kiskep img{
+    width: 100%;
+}
+
+/* @keyframes cat-sus {
         from {transform: rotate(0deg);}
         to {transform: rotate(200000000deg);}
-}
+} */

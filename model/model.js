@@ -11,9 +11,10 @@ class Model{
     }
 
     jobb(){
-        this.#id=this.#id+1>this.#keplista.length
+        this.#id=this.#id+1>=this.#keplista.length
         ?0
         :this.#id+1
+        console.log(this.#id+1);
     }
 
     bal(){
@@ -22,13 +23,16 @@ class Model{
         :this.#id-1
     }
 
-    // get kepek(){
-    //     return this.#keplista.slice()
-    // }
+    get kepek(){
+        return [... this.#keplista]
+    }
 
-    get id(){
-        console.log(this.#keplista[this.#id]);
+    get kep(){
         return this.#keplista[this.#id]
+    }
+
+    set id(id){
+        this.#id=id
     }
 }
 
